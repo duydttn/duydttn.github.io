@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Trang giới thiệu cá nhân" />
+    <title>Duy — Personal Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#content">Bỏ qua để đến nội dung</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span class="brand-text">Duy</span>
+        </a>
+
+        <nav class="nav" aria-label="Điều hướng">
+          <a href="#about">Giới thiệu</a>
+          <a href="#skills">Kỹ năng</a>
+          <a href="#projects">Dự án</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="badge">Xin chào, mình là</p>
+            <h1 class="title">Duy</h1>
+            <p class="subtitle">
+              Mình xây dựng sản phẩm web, thích code gọn, rõ ràng và tối ưu trải
+              nghiệm người dùng.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn primary" href="#contact">Liên hệ</a>
+              <a class="btn" href="#projects">Xem dự án</a>
+            </div>
+
+            <div class="meta">
+              <div class="meta-item">
+                <span class="meta-label">Location</span>
+                <span class="meta-value">Vietnam</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Web / Backend / Fullstack</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Ảnh đại diện">
+            <!-- Optional: đặt ảnh tại assets/avatar.jpg -->
+            <div class="avatar-wrap">
+              <img
+                class="avatar"
+                src="./assets/avatar.jpg"
+                alt="Ảnh đại diện của Duy"
+                onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='grid';"
+              />
+              <div id="avatarFallback" class="avatar-fallback" style="display:none;">
+                <div class="avatar-initials" aria-hidden="true">DT</div>
+                <div class="avatar-hint">Thêm ảnh: <code>assets/avatar.jpg</code></div>
+              </div>
+            </div>
+
+            <div class="quick-links">
+              <a class="chip" href="https://github.com/duydttn" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="chip" href="mailto:your-email@example.com">Email</a>
+              <a class="chip" href="#" target="_blank" rel="noreferrer">CV</a>
+              <a class="chip" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+
+            <p class="note">
+              Tip: sửa các link ở phần “quick links” để trỏ đúng hồ sơ của bạn.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">Giới thiệu</h2>
+          <div class="card">
+            <p>
+              Mình là một developer yêu thích việc biến ý tưởng thành sản phẩm
+              chạy thật. Mình quan tâm tới kiến trúc rõ ràng, code dễ bảo trì,
+              và hiệu năng.
+            </p>
+            <p class="muted">
+              (Bạn có thể thay đoạn này bằng 4–6 câu về bản thân: kinh nghiệm,
+              định hướng, giá trị bạn theo đuổi, v.v.)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title">Kỹ năng</h2>
+          <div class="grid-3">
+            <div class="card">
+              <h3>Backend</h3>
+              <ul class="list">
+                <li>API design (REST)</li>
+                <li>Auth / Security basics</li>
+                <li>Database: PostgreSQL / MySQL</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Frontend</h3>
+              <ul class="list">
+                <li>HTML/CSS/JS</li>
+                <li>Responsive UI</li>
+                <li>Accessibility cơ bản</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Tooling</h3>
+              <ul class="list">
+                <li>Git / GitHub</li>
+                <li>CI/CD (GitHub Actions)</li>
+                <li>Linux / Docker (cơ bản)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Dự án nổi bật</h2>
+
+          <div class="grid-2">
+            <article class="card project">
+              <div class="project-head">
+                <h3>Project A</h3>
+                <div class="project-tags">
+                  <span class="tag">API</span>
+                  <span class="tag">Postgres</span>
+                </div>
+              </div>
+              <p class="muted">
+                Mô tả ngắn 1–2 câu: dự án giải quyết vấn đề gì, bạn làm phần nào.
+              </p>
+              <div class="project-links">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Repo</a>
+                <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="project-head">
+                <h3>Project B</h3>
+                <div class="project-tags">
+                  <span class="tag">Web</span>
+                  <span class="tag">UI</span>
+                </div>
+              </div>
+              <p class="muted">
+                Mô tả ngắn 1–2 câu: kết quả, tính năng chính, điểm nổi bật.
+              </p>
+              <div class="project-links">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Repo</a>
+                <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="project-head">
+                <h3>Project C</h3>
+                <div class="project-tags">
+                  <span class="tag">Automation</span>
+                  <span class="tag">CI</span>
+                </div>
+              </div>
+              <p class="muted">
+                Mô tả ngắn 1–2 câu: bạn tối ưu quy trình, giảm thời gian build, v.v.
+              </p>
+              <div class="project-links">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Repo</a>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="project-head">
+                <h3>Project D</h3>
+                <div class="project-tags">
+                  <span class="tag">Open Source</span>
+                  <span class="tag">Docs</span>
+                </div>
+              </div>
+              <p class="muted">
+                Mô tả ngắn 1–2 câu: đóng góp, scope, impact.
+              </p>
+              <div class="project-links">
+                <a class="link" href="#" target="_blank" rel="noreferrer">Link</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Liên hệ</h2>
+          <div class="card contact">
+            <p>
+              Nếu bạn muốn trao đổi về công việc/dự án, cứ nhắn mình qua:
+            </p>
+            <div class="contact-row">
+              <a class="btn primary" href="mailto:your-email@example.com">Email</a>
+              <a class="btn" href="https://github.com/duydttn" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+
+            <p class="muted small">
+              Gợi ý: thay <code>your-email@example.com</code> bằng email thật của bạn.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="muted small">© <span id="year"></span> Duy. Built with GitHub Pages.</span>
+        <a class="muted small" href="#content">Lên đầu trang</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
